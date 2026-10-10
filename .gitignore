@@ -1,0 +1,62 @@
+# Local datasets and generated model artifacts
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/ml/models/*
+!/ml/models/.gitkeep
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.weights
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.pb
+*.pkl
+*.joblib
+
+# Environment files and local secrets
+.env
+.env.*
+*.env
+
+# Dependencies and build output
+.venv/
+venv/
+env/
+node_modules/
+build/
+dist/
+.dart_tool/
+
+# Caches, logs, and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+coverage/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+tmp/
+temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
