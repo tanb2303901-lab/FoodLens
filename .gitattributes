@@ -1,0 +1,5 @@
+# Files verified by SHA-256 at runtime (model bundle manifest, class maps): keep exact bytes,
+# no line-ending conversion, so every clone matches the recorded checksums.
+ml/models/** -text
+docs/dataset/food-identities-v1.json -text
+docs/dataset/food-identities-v2.json -text
