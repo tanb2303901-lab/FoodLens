@@ -1,0 +1,18 @@
+{
+  "supabase_url": "http://127.0.0.1:54321",
+  "public_key": "sb_publishable_REPLACE_WITH_YOUR_PUBLIC_KEY",
+  "jwt_issuer": "http://127.0.0.1:54321/auth/v1",
+  "jwt_audience": "authenticated",
+  "jwt_algorithm": "ES256",
+  "cursor_secret": "REPLACE_WITH_RANDOM_SECRET_AT_LEAST_32_CHARACTERS",
+  "http_timeout": 5.0,
+  "jwks_ttl": 600.0,
+  "scan_service_key": null,
+  "image_max_bytes": 10485760,
+  "image_max_pixels": 20000000,
+  "image_max_dimension": 8192,
+  "image_url_ttl": 300,
+  "prediction_timeout": 30.0,
+  "model_bundle_path": null,
+  "model_device": "cpu"
+}

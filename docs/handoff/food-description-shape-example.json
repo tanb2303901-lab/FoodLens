@@ -1,0 +1,43 @@
+{
+  "illustrative": true,
+  "note": "Minh họa cấu trúc response khi một món đã được người duyệt publish. Văn bản là chuỗi giữ chỗ, không phải nội dung thật; hiện chưa có món nào ở trạng thái published. Ví dụ unavailable thật nằm trong api-examples-v1.json (case food_description_unavailable).",
+  "response": {
+    "food_id": "f3cb647a-925c-50d7-89cf-8960e141a11c",
+    "slug": "pho",
+    "name_vi": "Phở",
+    "name_en": "Vietnamese noodle soup",
+    "scope_kind": "prepared_food",
+    "status": "available",
+    "reason": null,
+    "description": {
+      "locale": "vi",
+      "version": 1,
+      "content_status": "published",
+      "short_intro": "<GIỚI THIỆU NGẮN ĐÃ DUYỆT>",
+      "origin_text": "<NGUỒN GỐC ĐÃ DUYỆT HOẶC null>",
+      "ingredients_summary": "<NGUYÊN LIỆU THƯỜNG GẶP ĐÃ DUYỆT>",
+      "characteristics": "<ĐẶC ĐIỂM ĐÃ DUYỆT>",
+      "scope_note": null,
+      "authoring_method": "ai_assisted_draft",
+      "reviewed_at": "2026-10-20T03:00:00Z",
+      "published_at": "2026-10-20T04:00:00Z",
+      "updated_at": "2026-10-20T04:00:00Z",
+      "sources": [
+        {
+          "source_key": "vnat-21-must-try-dishes",
+          "title": "21 must-try Vietnamese dishes",
+          "publisher": "Viet Nam National Authority of Tourism (vietnam.travel)",
+          "url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes",
+          "language": "en",
+          "source_kind": "government_tourism",
+          "revision_ref": null,
+          "accessed_on": "2026-10-19",
+          "license_note": "<GHI CHÚ QUYỀN SỬ DỤNG>",
+          "supports": ["short_intro", "origin_text", "ingredients_summary", "characteristics"],
+          "locator": "Chapter 01 — 1. Phở"
+        }
+      ]
+    },
+    "notice": "Thông tin giới thiệu phổ thông về món ăn; không phải tư vấn sức khỏe, dinh dưỡng hay y tế."
+  }
+}

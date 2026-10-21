@@ -1,0 +1,1365 @@
+{
+  "audit_date": "2026-10-15",
+  "class_map_sha256": "56e22da594d45bd750b0a0a008d596e4381dfb3e2f6c8029f12afb4e8fe7acd8",
+  "per_class": [
+    {
+      "training_class_id": 0,
+      "original_class_id": 0,
+      "slug": "banh_canh",
+      "images": {
+        "train": 10294,
+        "valid": 0,
+        "test": 0,
+        "review": 184
+      },
+      "boxes": {
+        "train": 11875,
+        "valid": 0,
+        "test": 0,
+        "review": 219
+      }
+    },
+    {
+      "training_class_id": 1,
+      "original_class_id": 1,
+      "slug": "banh_chung",
+      "images": {
+        "train": 4869,
+        "valid": 0,
+        "test": 0,
+        "review": 79
+      },
+      "boxes": {
+        "train": 6236,
+        "valid": 0,
+        "test": 0,
+        "review": 97
+      }
+    },
+    {
+      "training_class_id": 2,
+      "original_class_id": 2,
+      "slug": "banh_cuon",
+      "images": {
+        "train": 8889,
+        "valid": 0,
+        "test": 1,
+        "review": 172
+      },
+      "boxes": {
+        "train": 11017,
+        "valid": 0,
+        "test": 1,
+        "review": 218
+      }
+    },
+    {
+      "training_class_id": 3,
+      "original_class_id": 3,
+      "slug": "banh_khot",
+      "images": {
+        "train": 6343,
+        "valid": 0,
+        "test": 0,
+        "review": 122
+      },
+      "boxes": {
+        "train": 11963,
+        "valid": 0,
+        "test": 0,
+        "review": 287
+      }
+    },
+    {
+      "training_class_id": 4,
+      "original_class_id": 4,
+      "slug": "banh_mi",
+      "images": {
+        "train": 8930,
+        "valid": 45,
+        "test": 12,
+        "review": 117
+      },
+      "boxes": {
+        "train": 13751,
+        "valid": 78,
+        "test": 18,
+        "review": 156
+      }
+    },
+    {
+      "training_class_id": 5,
+      "original_class_id": 5,
+      "slug": "banh_trang",
+      "images": {
+        "train": 8193,
+        "valid": 0,
+        "test": 0,
+        "review": 164
+      },
+      "boxes": {
+        "train": 10185,
+        "valid": 0,
+        "test": 0,
+        "review": 187
+      }
+    },
+    {
+      "training_class_id": 6,
+      "original_class_id": 6,
+      "slug": "banh_trang_tron",
+      "images": {
+        "train": 5649,
+        "valid": 35,
+        "test": 16,
+        "review": 72
+      },
+      "boxes": {
+        "train": 7864,
+        "valid": 40,
+        "test": 17,
+        "review": 87
+      }
+    },
+    {
+      "training_class_id": 7,
+      "original_class_id": 7,
+      "slug": "banh_xeo",
+      "images": {
+        "train": 9084,
+        "valid": 19,
+        "test": 17,
+        "review": 146
+      },
+      "boxes": {
+        "train": 12728,
+        "valid": 26,
+        "test": 19,
+        "review": 219
+      }
+    },
+    {
+      "training_class_id": 8,
+      "original_class_id": 8,
+      "slug": "bo_kho",
+      "images": {
+        "train": 8807,
+        "valid": 0,
+        "test": 0,
+        "review": 149
+      },
+      "boxes": {
+        "train": 9339,
+        "valid": 0,
+        "test": 0,
+        "review": 155
+      }
+    },
+    {
+      "training_class_id": 9,
+      "original_class_id": 9,
+      "slug": "bo_la_lot",
+      "images": {
+        "train": 6205,
+        "valid": 0,
+        "test": 0,
+        "review": 129
+      },
+      "boxes": {
+        "train": 6813,
+        "valid": 0,
+        "test": 0,
+        "review": 142
+      }
+    },
+    {
+      "training_class_id": 10,
+      "original_class_id": 10,
+      "slug": "bong_cai",
+      "images": {
+        "train": 5033,
+        "valid": 26,
+        "test": 13,
+        "review": 53
+      },
+      "boxes": {
+        "train": 8817,
+        "valid": 44,
+        "test": 25,
+        "review": 76
+      }
+    },
+    {
+      "training_class_id": 11,
+      "original_class_id": 11,
+      "slug": "bun",
+      "images": {
+        "train": 11669,
+        "valid": 1,
+        "test": 0,
+        "review": 257
+      },
+      "boxes": {
+        "train": 12947,
+        "valid": 1,
+        "test": 0,
+        "review": 287
+      }
+    },
+    {
+      "training_class_id": 12,
+      "original_class_id": 12,
+      "slug": "bun_bo_hue",
+      "images": {
+        "train": 11301,
+        "valid": 38,
+        "test": 24,
+        "review": 177
+      },
+      "boxes": {
+        "train": 15414,
+        "valid": 42,
+        "test": 30,
+        "review": 240
+      }
+    },
+    {
+      "training_class_id": 13,
+      "original_class_id": 13,
+      "slug": "bun_cha",
+      "images": {
+        "train": 6763,
+        "valid": 0,
+        "test": 0,
+        "review": 122
+      },
+      "boxes": {
+        "train": 7958,
+        "valid": 0,
+        "test": 0,
+        "review": 139
+      }
+    },
+    {
+      "training_class_id": 14,
+      "original_class_id": 14,
+      "slug": "bun_dau",
+      "images": {
+        "train": 12029,
+        "valid": 37,
+        "test": 17,
+        "review": 180
+      },
+      "boxes": {
+        "train": 15415,
+        "valid": 44,
+        "test": 17,
+        "review": 223
+      }
+    },
+    {
+      "training_class_id": 15,
+      "original_class_id": 15,
+      "slug": "bun_mam",
+      "images": {
+        "train": 8717,
+        "valid": 0,
+        "test": 0,
+        "review": 167
+      },
+      "boxes": {
+        "train": 10669,
+        "valid": 0,
+        "test": 0,
+        "review": 197
+      }
+    },
+    {
+      "training_class_id": 16,
+      "original_class_id": 16,
+      "slug": "bun_rieu",
+      "images": {
+        "train": 13033,
+        "valid": 0,
+        "test": 0,
+        "review": 257
+      },
+      "boxes": {
+        "train": 16662,
+        "valid": 0,
+        "test": 0,
+        "review": 309
+      }
+    },
+    {
+      "training_class_id": 17,
+      "original_class_id": 17,
+      "slug": "ca",
+      "images": {
+        "train": 19574,
+        "valid": 0,
+        "test": 0,
+        "review": 393
+      },
+      "boxes": {
+        "train": 24371,
+        "valid": 0,
+        "test": 0,
+        "review": 468
+      }
+    },
+    {
+      "training_class_id": 18,
+      "original_class_id": 18,
+      "slug": "ca_chua",
+      "images": {
+        "train": 8716,
+        "valid": 10,
+        "test": 6,
+        "review": 169
+      },
+      "boxes": {
+        "train": 15244,
+        "valid": 36,
+        "test": 12,
+        "review": 330
+      }
+    },
+    {
+      "training_class_id": 19,
+      "original_class_id": 19,
+      "slug": "ca_phao",
+      "images": {
+        "train": 4238,
+        "valid": 0,
+        "test": 0,
+        "review": 91
+      },
+      "boxes": {
+        "train": 6246,
+        "valid": 0,
+        "test": 0,
+        "review": 187
+      }
+    },
+    {
+      "training_class_id": 20,
+      "original_class_id": 20,
+      "slug": "ca_rot",
+      "images": {
+        "train": 3874,
+        "valid": 8,
+        "test": 7,
+        "review": 51
+      },
+      "boxes": {
+        "train": 6707,
+        "valid": 19,
+        "test": 15,
+        "review": 74
+      }
+    },
+    {
+      "training_class_id": 21,
+      "original_class_id": 21,
+      "slug": "canh",
+      "images": {
+        "train": 7851,
+        "valid": 0,
+        "test": 0,
+        "review": 154
+      },
+      "boxes": {
+        "train": 8511,
+        "valid": 0,
+        "test": 0,
+        "review": 161
+      }
+    },
+    {
+      "training_class_id": 22,
+      "original_class_id": 22,
+      "slug": "cha",
+      "images": {
+        "train": 13471,
+        "valid": 1,
+        "test": 0,
+        "review": 282
+      },
+      "boxes": {
+        "train": 17569,
+        "valid": 1,
+        "test": 0,
+        "review": 373
+      }
+    },
+    {
+      "training_class_id": 23,
+      "original_class_id": 23,
+      "slug": "cha_gio",
+      "images": {
+        "train": 8910,
+        "valid": 0,
+        "test": 0,
+        "review": 177
+      },
+      "boxes": {
+        "train": 10660,
+        "valid": 0,
+        "test": 0,
+        "review": 213
+      }
+    },
+    {
+      "training_class_id": 24,
+      "original_class_id": 24,
+      "slug": "chanh",
+      "images": {
+        "train": 9727,
+        "valid": 1,
+        "test": 1,
+        "review": 261
+      },
+      "boxes": {
+        "train": 11299,
+        "valid": 1,
+        "test": 1,
+        "review": 291
+      }
+    },
+    {
+      "training_class_id": 25,
+      "original_class_id": 25,
+      "slug": "com",
+      "images": {
+        "train": 8057,
+        "valid": 0,
+        "test": 0,
+        "review": 151
+      },
+      "boxes": {
+        "train": 9069,
+        "valid": 0,
+        "test": 0,
+        "review": 172
+      }
+    },
+    {
+      "training_class_id": 26,
+      "original_class_id": 26,
+      "slug": "com_tam",
+      "images": {
+        "train": 8630,
+        "valid": 23,
+        "test": 11,
+        "review": 128
+      },
+      "boxes": {
+        "train": 10239,
+        "valid": 23,
+        "test": 11,
+        "review": 143
+      }
+    },
+    {
+      "training_class_id": 27,
+      "original_class_id": 28,
+      "slug": "cu_kieu",
+      "images": {
+        "train": 5002,
+        "valid": 2,
+        "test": 0,
+        "review": 87
+      },
+      "boxes": {
+        "train": 5829,
+        "valid": 2,
+        "test": 0,
+        "review": 96
+      }
+    },
+    {
+      "training_class_id": 28,
+      "original_class_id": 29,
+      "slug": "cua",
+      "images": {
+        "train": 5337,
+        "valid": 4,
+        "test": 2,
+        "review": 90
+      },
+      "boxes": {
+        "train": 6388,
+        "valid": 4,
+        "test": 2,
+        "review": 107
+      }
+    },
+    {
+      "training_class_id": 29,
+      "original_class_id": 30,
+      "slug": "dau_hu",
+      "images": {
+        "train": 6176,
+        "valid": 0,
+        "test": 0,
+        "review": 132
+      },
+      "boxes": {
+        "train": 7834,
+        "valid": 0,
+        "test": 0,
+        "review": 182
+      }
+    },
+    {
+      "training_class_id": 30,
+      "original_class_id": 31,
+      "slug": "dua_chua",
+      "images": {
+        "train": 4881,
+        "valid": 3,
+        "test": 0,
+        "review": 87
+      },
+      "boxes": {
+        "train": 5428,
+        "valid": 3,
+        "test": 0,
+        "review": 97
+      }
+    },
+    {
+      "training_class_id": 31,
+      "original_class_id": 32,
+      "slug": "dua_leo",
+      "images": {
+        "train": 11057,
+        "valid": 18,
+        "test": 10,
+        "review": 222
+      },
+      "boxes": {
+        "train": 16056,
+        "valid": 51,
+        "test": 20,
+        "review": 299
+      }
+    },
+    {
+      "training_class_id": 32,
+      "original_class_id": 33,
+      "slug": "goi_cuon",
+      "images": {
+        "train": 7700,
+        "valid": 32,
+        "test": 15,
+        "review": 93
+      },
+      "boxes": {
+        "train": 12406,
+        "valid": 35,
+        "test": 15,
+        "review": 154
+      }
+    },
+    {
+      "training_class_id": 33,
+      "original_class_id": 34,
+      "slug": "hamburger",
+      "images": {
+        "train": 10223,
+        "valid": 82,
+        "test": 43,
+        "review": 75
+      },
+      "boxes": {
+        "train": 13632,
+        "valid": 114,
+        "test": 56,
+        "review": 89
+      }
+    },
+    {
+      "training_class_id": 34,
+      "original_class_id": 35,
+      "slug": "heo_quay",
+      "images": {
+        "train": 9774,
+        "valid": 0,
+        "test": 0,
+        "review": 160
+      },
+      "boxes": {
+        "train": 11908,
+        "valid": 0,
+        "test": 0,
+        "review": 202
+      }
+    },
+    {
+      "training_class_id": 35,
+      "original_class_id": 36,
+      "slug": "hu_tieu",
+      "images": {
+        "train": 8141,
+        "valid": 23,
+        "test": 10,
+        "review": 122
+      },
+      "boxes": {
+        "train": 9315,
+        "valid": 23,
+        "test": 10,
+        "review": 136
+      }
+    },
+    {
+      "training_class_id": 36,
+      "original_class_id": 37,
+      "slug": "kho_qua_thit",
+      "images": {
+        "train": 3336,
+        "valid": 0,
+        "test": 0,
+        "review": 71
+      },
+      "boxes": {
+        "train": 5193,
+        "valid": 0,
+        "test": 0,
+        "review": 138
+      }
+    },
+    {
+      "training_class_id": 37,
+      "original_class_id": 38,
+      "slug": "khoai_tay_chien",
+      "images": {
+        "train": 8881,
+        "valid": 76,
+        "test": 36,
+        "review": 64
+      },
+      "boxes": {
+        "train": 10122,
+        "valid": 77,
+        "test": 36,
+        "review": 88
+      }
+    },
+    {
+      "training_class_id": 38,
+      "original_class_id": 39,
+      "slug": "lau",
+      "images": {
+        "train": 7407,
+        "valid": 0,
+        "test": 0,
+        "review": 168
+      },
+      "boxes": {
+        "train": 8332,
+        "valid": 0,
+        "test": 0,
+        "review": 186
+      }
+    },
+    {
+      "training_class_id": 39,
+      "original_class_id": 40,
+      "slug": "long_heo",
+      "images": {
+        "train": 7959,
+        "valid": 1,
+        "test": 0,
+        "review": 151
+      },
+      "boxes": {
+        "train": 9204,
+        "valid": 1,
+        "test": 0,
+        "review": 172
+      }
+    },
+    {
+      "training_class_id": 40,
+      "original_class_id": 41,
+      "slug": "mi",
+      "images": {
+        "train": 6610,
+        "valid": 0,
+        "test": 0,
+        "review": 119
+      },
+      "boxes": {
+        "train": 7688,
+        "valid": 0,
+        "test": 0,
+        "review": 149
+      }
+    },
+    {
+      "training_class_id": 41,
+      "original_class_id": 42,
+      "slug": "muc",
+      "images": {
+        "train": 10452,
+        "valid": 0,
+        "test": 0,
+        "review": 198
+      },
+      "boxes": {
+        "train": 11691,
+        "valid": 0,
+        "test": 0,
+        "review": 232
+      }
+    },
+    {
+      "training_class_id": 42,
+      "original_class_id": 43,
+      "slug": "nam",
+      "images": {
+        "train": 6432,
+        "valid": 0,
+        "test": 0,
+        "review": 131
+      },
+      "boxes": {
+        "train": 7916,
+        "valid": 0,
+        "test": 0,
+        "review": 180
+      }
+    },
+    {
+      "training_class_id": 43,
+      "original_class_id": 44,
+      "slug": "oc",
+      "images": {
+        "train": 10215,
+        "valid": 0,
+        "test": 0,
+        "review": 198
+      },
+      "boxes": {
+        "train": 17912,
+        "valid": 0,
+        "test": 0,
+        "review": 424
+      }
+    },
+    {
+      "training_class_id": 44,
+      "original_class_id": 45,
+      "slug": "ot_chuong",
+      "images": {
+        "train": 7441,
+        "valid": 46,
+        "test": 28,
+        "review": 63
+      },
+      "boxes": {
+        "train": 16000,
+        "valid": 113,
+        "test": 46,
+        "review": 140
+      }
+    },
+    {
+      "training_class_id": 45,
+      "original_class_id": 46,
+      "slug": "pho",
+      "images": {
+        "train": 7963,
+        "valid": 51,
+        "test": 16,
+        "review": 124
+      },
+      "boxes": {
+        "train": 10351,
+        "valid": 61,
+        "test": 20,
+        "review": 133
+      }
+    },
+    {
+      "training_class_id": 46,
+      "original_class_id": 47,
+      "slug": "pho_mai",
+      "images": {
+        "train": 6243,
+        "valid": 79,
+        "test": 40,
+        "review": 14
+      },
+      "boxes": {
+        "train": 14279,
+        "valid": 214,
+        "test": 85,
+        "review": 20
+      }
+    },
+    {
+      "training_class_id": 47,
+      "original_class_id": 48,
+      "slug": "rau",
+      "images": {
+        "train": 26958,
+        "valid": 1,
+        "test": 0,
+        "review": 658
+      },
+      "boxes": {
+        "train": 31071,
+        "valid": 1,
+        "test": 0,
+        "review": 699
+      }
+    },
+    {
+      "training_class_id": 48,
+      "original_class_id": 49,
+      "slug": "salad",
+      "images": {
+        "train": 7766,
+        "valid": 34,
+        "test": 17,
+        "review": 107
+      },
+      "boxes": {
+        "train": 8579,
+        "valid": 38,
+        "test": 21,
+        "review": 121
+      }
+    },
+    {
+      "training_class_id": 49,
+      "original_class_id": 50,
+      "slug": "thit_bo",
+      "images": {
+        "train": 9471,
+        "valid": 2,
+        "test": 2,
+        "review": 172
+      },
+      "boxes": {
+        "train": 12931,
+        "valid": 2,
+        "test": 2,
+        "review": 234
+      }
+    },
+    {
+      "training_class_id": 50,
+      "original_class_id": 51,
+      "slug": "thit_ga",
+      "images": {
+        "train": 12477,
+        "valid": 0,
+        "test": 0,
+        "review": 240
+      },
+      "boxes": {
+        "train": 14590,
+        "valid": 0,
+        "test": 0,
+        "review": 297
+      }
+    },
+    {
+      "training_class_id": 51,
+      "original_class_id": 52,
+      "slug": "thit_heo",
+      "images": {
+        "train": 9238,
+        "valid": 1,
+        "test": 0,
+        "review": 212
+      },
+      "boxes": {
+        "train": 11678,
+        "valid": 1,
+        "test": 0,
+        "review": 252
+      }
+    },
+    {
+      "training_class_id": 52,
+      "original_class_id": 53,
+      "slug": "thit_kho",
+      "images": {
+        "train": 7897,
+        "valid": 0,
+        "test": 0,
+        "review": 156
+      },
+      "boxes": {
+        "train": 8637,
+        "valid": 0,
+        "test": 0,
+        "review": 163
+      }
+    },
+    {
+      "training_class_id": 53,
+      "original_class_id": 54,
+      "slug": "thit_nuong",
+      "images": {
+        "train": 6794,
+        "valid": 15,
+        "test": 9,
+        "review": 100
+      },
+      "boxes": {
+        "train": 7791,
+        "valid": 16,
+        "test": 9,
+        "review": 134
+      }
+    },
+    {
+      "training_class_id": 54,
+      "original_class_id": 55,
+      "slug": "tom",
+      "images": {
+        "train": 9931,
+        "valid": 0,
+        "test": 0,
+        "review": 205
+      },
+      "boxes": {
+        "train": 13914,
+        "valid": 0,
+        "test": 0,
+        "review": 297
+      }
+    },
+    {
+      "training_class_id": 55,
+      "original_class_id": 56,
+      "slug": "trung",
+      "images": {
+        "train": 11860,
+        "valid": 25,
+        "test": 10,
+        "review": 199
+      },
+      "boxes": {
+        "train": 20019,
+        "valid": 42,
+        "test": 26,
+        "review": 360
+      }
+    },
+    {
+      "training_class_id": 56,
+      "original_class_id": 57,
+      "slug": "xoi",
+      "images": {
+        "train": 12582,
+        "valid": 43,
+        "test": 27,
+        "review": 200
+      },
+      "boxes": {
+        "train": 16235,
+        "valid": 54,
+        "test": 32,
+        "review": 222
+      }
+    },
+    {
+      "training_class_id": 57,
+      "original_class_id": 58,
+      "slug": "banh_beo",
+      "images": {
+        "train": 7617,
+        "valid": 13,
+        "test": 4,
+        "review": 124
+      },
+      "boxes": {
+        "train": 32289,
+        "valid": 96,
+        "test": 29,
+        "review": 444
+      }
+    },
+    {
+      "training_class_id": 58,
+      "original_class_id": 59,
+      "slug": "cao_lau",
+      "images": {
+        "train": 10418,
+        "valid": 4,
+        "test": 4,
+        "review": 188
+      },
+      "boxes": {
+        "train": 14248,
+        "valid": 5,
+        "test": 4,
+        "review": 241
+      }
+    },
+    {
+      "training_class_id": 59,
+      "original_class_id": 60,
+      "slug": "mi_quang",
+      "images": {
+        "train": 10598,
+        "valid": 0,
+        "test": 0,
+        "review": 214
+      },
+      "boxes": {
+        "train": 13539,
+        "valid": 0,
+        "test": 0,
+        "review": 249
+      }
+    },
+    {
+      "training_class_id": 60,
+      "original_class_id": 61,
+      "slug": "com_chien_duong_chau",
+      "images": {
+        "train": 11885,
+        "valid": 6,
+        "test": 9,
+        "review": 216
+      },
+      "boxes": {
+        "train": 14915,
+        "valid": 6,
+        "test": 9,
+        "review": 242
+      }
+    },
+    {
+      "training_class_id": 61,
+      "original_class_id": 62,
+      "slug": "bun_cha_ca",
+      "images": {
+        "train": 12040,
+        "valid": 0,
+        "test": 0,
+        "review": 229
+      },
+      "boxes": {
+        "train": 14193,
+        "valid": 0,
+        "test": 0,
+        "review": 271
+      }
+    },
+    {
+      "training_class_id": 62,
+      "original_class_id": 63,
+      "slug": "com_chien_ga",
+      "images": {
+        "train": 13559,
+        "valid": 0,
+        "test": 0,
+        "review": 257
+      },
+      "boxes": {
+        "train": 15510,
+        "valid": 0,
+        "test": 0,
+        "review": 274
+      }
+    },
+    {
+      "training_class_id": 63,
+      "original_class_id": 64,
+      "slug": "chao_long",
+      "images": {
+        "train": 10965,
+        "valid": 3,
+        "test": 3,
+        "review": 201
+      },
+      "boxes": {
+        "train": 12772,
+        "valid": 5,
+        "test": 3,
+        "review": 220
+      }
+    },
+    {
+      "training_class_id": 64,
+      "original_class_id": 65,
+      "slug": "nom_hoa_chuoi",
+      "images": {
+        "train": 12645,
+        "valid": 0,
+        "test": 0,
+        "review": 235
+      },
+      "boxes": {
+        "train": 15034,
+        "valid": 0,
+        "test": 0,
+        "review": 267
+      }
+    },
+    {
+      "training_class_id": 65,
+      "original_class_id": 66,
+      "slug": "nui_xao_bo",
+      "images": {
+        "train": 10968,
+        "valid": 0,
+        "test": 0,
+        "review": 200
+      },
+      "boxes": {
+        "train": 11899,
+        "valid": 0,
+        "test": 0,
+        "review": 203
+      }
+    },
+    {
+      "training_class_id": 66,
+      "original_class_id": 67,
+      "slug": "sup_cua",
+      "images": {
+        "train": 10400,
+        "valid": 0,
+        "test": 0,
+        "review": 188
+      },
+      "boxes": {
+        "train": 15561,
+        "valid": 0,
+        "test": 0,
+        "review": 285
+      }
+    }
+  ],
+  "decode": {
+    "selected": 659,
+    "completed": 659,
+    "by_split": {
+      "test": 130,
+      "review": 136,
+      "excluded": 128,
+      "train": 128,
+      "valid": 137
+    },
+    "classes_covered": {
+      "test": [
+        2,
+        4,
+        6,
+        7,
+        10,
+        12,
+        14,
+        18,
+        20,
+        24,
+        26,
+        28,
+        31,
+        32,
+        33,
+        35,
+        37,
+        44,
+        45,
+        46,
+        48,
+        49,
+        53,
+        55,
+        56,
+        57,
+        58,
+        60,
+        63
+      ],
+      "review": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "train": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "valid": [
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14,
+        18,
+        20,
+        22,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        35,
+        37,
+        39,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        53,
+        55,
+        56,
+        57,
+        58,
+        60,
+        63
+      ]
+    }
+  },
+  "scope": "Source CSV/raw-label/files audit; no semantic label or model-quality acceptance"
+}

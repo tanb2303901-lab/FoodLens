@@ -1,0 +1,734 @@
+{
+  "uuid_algorithm": "UUIDv5",
+  "uuid_namespace": "6ba7b811-9dad-11d1-80b4-00c04fd430c8",
+  "uuid_name_template": "urn:foodlens:food:{slug}",
+  "artifact_version": 2,
+  "class_map_version": "foodlens-75-2026-10-16-v2",
+  "source_data_version": "foodlens-75-extension-2026-10-16-v2",
+  "base_class_map_version": "vietfood-67-2026-10-12-v1",
+  "base_class_map_sha256": "56e22da594d45bd750b0a0a008d596e4381dfb3e2f6c8029f12afb4e8fe7acd8",
+  "base_source_class_sha256": "752cc31be44414c4b9d0fd9395aef13124fa9e6a62ed9911f585ca1c4e493fed",
+  "class_count": 75,
+  "extension_approval": "Owner approved eight broad classes and maximum four-hour additional training; later broadened chicken to grilled/roasted chicken of any cut and confirmed all sweet-potato preparation styles. Not model quality or nutrition approval.",
+  "foods": [
+    {
+      "id": "36c39ede-2990-5091-9bc2-8fc86fe38d98",
+      "slug": "banh_canh",
+      "name_vi": "Bánh canh",
+      "name_en": "Vietnamese thick noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 0,
+      "original_class_id": 0
+    },
+    {
+      "id": "07f17064-2766-5655-93dc-3f22db80fad2",
+      "slug": "banh_chung",
+      "name_vi": "Bánh chưng",
+      "name_en": "Square sticky rice cake",
+      "scope_kind": "prepared_food",
+      "training_class_id": 1,
+      "original_class_id": 1
+    },
+    {
+      "id": "239c8d31-c43c-568d-b55b-1f582d1e7647",
+      "slug": "banh_cuon",
+      "name_vi": "Bánh cuốn",
+      "name_en": "Rolled rice pancake",
+      "scope_kind": "prepared_food",
+      "training_class_id": 2,
+      "original_class_id": 2
+    },
+    {
+      "id": "3a83adcf-6e86-56d9-90d8-1f4634c0f7b7",
+      "slug": "banh_khot",
+      "name_vi": "Bánh khọt",
+      "name_en": "Mini savory pancakes",
+      "scope_kind": "prepared_food",
+      "training_class_id": 3,
+      "original_class_id": 3
+    },
+    {
+      "id": "6233ef22-7575-5ebb-a42e-f4257d5b7153",
+      "slug": "banh_mi",
+      "name_vi": "Bánh mì",
+      "name_en": "Vietnamese baguette sandwich",
+      "scope_kind": "prepared_food",
+      "training_class_id": 4,
+      "original_class_id": 4
+    },
+    {
+      "id": "8996a748-bcf6-5dbf-8158-d507244f9970",
+      "slug": "banh_trang",
+      "name_vi": "Bánh tráng",
+      "name_en": "Rice paper",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 5,
+      "original_class_id": 5
+    },
+    {
+      "id": "94c6d256-dd80-57d8-972e-081a15070113",
+      "slug": "banh_trang_tron",
+      "name_vi": "Bánh tráng trộn",
+      "name_en": "Rice paper salad",
+      "scope_kind": "prepared_food",
+      "training_class_id": 6,
+      "original_class_id": 6
+    },
+    {
+      "id": "5854c86d-f564-53bf-b166-1d6cdf63797e",
+      "slug": "banh_xeo",
+      "name_vi": "Bánh xèo",
+      "name_en": "Vietnamese sizzling pancake",
+      "scope_kind": "prepared_food",
+      "training_class_id": 7,
+      "original_class_id": 7
+    },
+    {
+      "id": "60eeaaad-13e1-572a-a5e0-1a9ea1e04598",
+      "slug": "bo_kho",
+      "name_vi": "Bò kho",
+      "name_en": "Beef stew",
+      "scope_kind": "prepared_food",
+      "training_class_id": 8,
+      "original_class_id": 8
+    },
+    {
+      "id": "7ff0f542-5f6c-564e-81a0-5f67983f2f81",
+      "slug": "bo_la_lot",
+      "name_vi": "Bò lá lốt",
+      "name_en": "Grilled beef wrapped in betel leaves",
+      "scope_kind": "prepared_food",
+      "training_class_id": 9,
+      "original_class_id": 9
+    },
+    {
+      "id": "e19373a9-53d0-5f60-b5f4-7947dca806aa",
+      "slug": "bong_cai",
+      "name_vi": "Bông cải",
+      "name_en": "Cauliflower",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 10,
+      "original_class_id": 10
+    },
+    {
+      "id": "0fd24c4b-3e0c-5319-964c-00e04d71384f",
+      "slug": "bun",
+      "name_vi": "Bún",
+      "name_en": "Rice vermicelli",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 11,
+      "original_class_id": 11
+    },
+    {
+      "id": "4072f275-cca3-5208-912f-7ac076b9a3d0",
+      "slug": "bun_bo_hue",
+      "name_vi": "Bún bò Huế",
+      "name_en": "Hue beef noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 12,
+      "original_class_id": 12
+    },
+    {
+      "id": "702c1da8-ff05-56ad-aec1-387ecb926898",
+      "slug": "bun_cha",
+      "name_vi": "Bún chả",
+      "name_en": "Grilled pork with vermicelli",
+      "scope_kind": "prepared_food",
+      "training_class_id": 13,
+      "original_class_id": 13
+    },
+    {
+      "id": "717f6648-b793-5da0-a690-9e0d187ee38d",
+      "slug": "bun_dau",
+      "name_vi": "Bún đậu",
+      "name_en": "Vermicelli with tofu",
+      "scope_kind": "prepared_food",
+      "training_class_id": 14,
+      "original_class_id": 14
+    },
+    {
+      "id": "63a4825f-e403-5790-bde7-c588fcc082e2",
+      "slug": "bun_mam",
+      "name_vi": "Bún mắm",
+      "name_en": "Fermented fish noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 15,
+      "original_class_id": 15
+    },
+    {
+      "id": "3cb354e5-5bf0-59ff-aa62-41d00237c37d",
+      "slug": "bun_rieu",
+      "name_vi": "Bún riêu",
+      "name_en": "Crab noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 16,
+      "original_class_id": 16
+    },
+    {
+      "id": "1525c6da-e150-5f48-b05d-908bbd1a3692",
+      "slug": "ca",
+      "name_vi": "Cá",
+      "name_en": "Fish",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 17,
+      "original_class_id": 17
+    },
+    {
+      "id": "35d09104-db96-5822-994e-ab5430e3560e",
+      "slug": "ca_chua",
+      "name_vi": "Cà chua",
+      "name_en": "Tomato",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 18,
+      "original_class_id": 18
+    },
+    {
+      "id": "d4bbfb7f-24db-5254-8559-f980e2a8314c",
+      "slug": "ca_phao",
+      "name_vi": "Cà pháo",
+      "name_en": "Pickled eggplant",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 19,
+      "original_class_id": 19
+    },
+    {
+      "id": "bd4ca14a-e0db-5b07-a9fd-ff27d898c71e",
+      "slug": "ca_rot",
+      "name_vi": "Cà rốt",
+      "name_en": "Carrot",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 20,
+      "original_class_id": 20
+    },
+    {
+      "id": "3bc5fc56-567c-5f97-ae37-5c7a246435d0",
+      "slug": "canh",
+      "name_vi": "Canh",
+      "name_en": "Soup",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 21,
+      "original_class_id": 21
+    },
+    {
+      "id": "68a7cd76-a8a1-5ab6-bf1e-e719ac8bb8b5",
+      "slug": "cha",
+      "name_vi": "Chả",
+      "name_en": "Vietnamese pork roll",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 22,
+      "original_class_id": 22
+    },
+    {
+      "id": "a07f0508-3ee8-55a8-a894-4f4cea87e5a8",
+      "slug": "cha_gio",
+      "name_vi": "Chả giò",
+      "name_en": "Spring rolls",
+      "scope_kind": "prepared_food",
+      "training_class_id": 23,
+      "original_class_id": 23
+    },
+    {
+      "id": "caf753fa-8f8f-5c09-bba2-96b4c54ccdae",
+      "slug": "chanh",
+      "name_vi": "Chanh",
+      "name_en": "Lime",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 24,
+      "original_class_id": 24
+    },
+    {
+      "id": "89cde1f5-b817-541d-b122-a6084f566261",
+      "slug": "com",
+      "name_vi": "Cơm",
+      "name_en": "Rice",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 25,
+      "original_class_id": 25
+    },
+    {
+      "id": "fc7669d7-77dd-5927-ba1c-1738a94f0aeb",
+      "slug": "com_tam",
+      "name_vi": "Cơm tấm",
+      "name_en": "Broken rice",
+      "scope_kind": "prepared_food",
+      "training_class_id": 26,
+      "original_class_id": 26
+    },
+    {
+      "id": "5a4c8735-e6fc-5ec1-879a-222752d7adec",
+      "slug": "cu_kieu",
+      "name_vi": "Củ kiệu",
+      "name_en": "Pickled scallion head",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 27,
+      "original_class_id": 28
+    },
+    {
+      "id": "22366e4f-381d-54df-bdd4-7282de32d3eb",
+      "slug": "cua",
+      "name_vi": "Cua",
+      "name_en": "Crab",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 28,
+      "original_class_id": 29
+    },
+    {
+      "id": "a990e25e-02e9-59e1-b09e-5f43c93199e2",
+      "slug": "dau_hu",
+      "name_vi": "Đậu hũ",
+      "name_en": "Tofu",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 29,
+      "original_class_id": 30
+    },
+    {
+      "id": "1819d2cf-0f23-5d05-a2ca-4d5fce5af036",
+      "slug": "dua_chua",
+      "name_vi": "Dưa chua",
+      "name_en": "Pickled vegetables",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 30,
+      "original_class_id": 31
+    },
+    {
+      "id": "0a6b8aea-0db3-53fa-98fb-bcddbf243a17",
+      "slug": "dua_leo",
+      "name_vi": "Dưa leo",
+      "name_en": "Cucumber",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 31,
+      "original_class_id": 32
+    },
+    {
+      "id": "5bb2e5a6-4bc2-5019-8d3a-fb613341fd55",
+      "slug": "goi_cuon",
+      "name_vi": "Gỏi cuốn",
+      "name_en": "Fresh spring rolls",
+      "scope_kind": "prepared_food",
+      "training_class_id": 32,
+      "original_class_id": 33
+    },
+    {
+      "id": "9b3f892f-5570-5601-add5-220086f4342d",
+      "slug": "hamburger",
+      "name_vi": "Hamburger",
+      "name_en": "Hamburger",
+      "scope_kind": "prepared_food",
+      "training_class_id": 33,
+      "original_class_id": 34
+    },
+    {
+      "id": "a953a4f0-fe5e-56f0-a04a-9142c63db138",
+      "slug": "heo_quay",
+      "name_vi": "Heo quay",
+      "name_en": "Roast pork",
+      "scope_kind": "prepared_food",
+      "training_class_id": 34,
+      "original_class_id": 35
+    },
+    {
+      "id": "3f586499-6486-551a-905b-9b1eeea9c415",
+      "slug": "hu_tieu",
+      "name_vi": "Hủ tiếu",
+      "name_en": "Clear rice noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 35,
+      "original_class_id": 36
+    },
+    {
+      "id": "fba091df-9ef3-54b2-99ec-a63907a4141c",
+      "slug": "kho_qua_thit",
+      "name_vi": "Khổ qua nhồi thịt",
+      "name_en": "Stuffed bitter melon soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 36,
+      "original_class_id": 37
+    },
+    {
+      "id": "b1a652b5-25f9-5a6c-b20e-14e346761bfb",
+      "slug": "khoai_tay_chien",
+      "name_vi": "Khoai tây chiên",
+      "name_en": "French fries",
+      "scope_kind": "prepared_food",
+      "training_class_id": 37,
+      "original_class_id": 38
+    },
+    {
+      "id": "8932dc17-6588-52b3-b06b-874679ed5f95",
+      "slug": "lau",
+      "name_vi": "Lẩu",
+      "name_en": "Hotpot",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 38,
+      "original_class_id": 39
+    },
+    {
+      "id": "6b31e0bb-0c3a-5a3e-a5dd-88cc9d42a452",
+      "slug": "long_heo",
+      "name_vi": "Lòng heo",
+      "name_en": "Pork offal",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 39,
+      "original_class_id": 40
+    },
+    {
+      "id": "86dd8d6c-2869-5118-9ff3-cdc8a6755c17",
+      "slug": "mi",
+      "name_vi": "Mì",
+      "name_en": "Egg noodles",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 40,
+      "original_class_id": 41
+    },
+    {
+      "id": "fe61e74b-9dd0-5b6c-aeb2-89e0aab236a5",
+      "slug": "muc",
+      "name_vi": "Mực",
+      "name_en": "Squid",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 41,
+      "original_class_id": 42
+    },
+    {
+      "id": "556a9da0-a43b-5d09-866b-7e79440fc5b3",
+      "slug": "nam",
+      "name_vi": "Nấm",
+      "name_en": "Mushroom",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 42,
+      "original_class_id": 43
+    },
+    {
+      "id": "2ffaa184-0cc1-54c5-8431-53d884a2221f",
+      "slug": "oc",
+      "name_vi": "Ốc",
+      "name_en": "Snails",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 43,
+      "original_class_id": 44
+    },
+    {
+      "id": "50993fb9-d097-5706-9771-4c996b1d49b4",
+      "slug": "ot_chuong",
+      "name_vi": "Ớt chuông",
+      "name_en": "Bell pepper",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 44,
+      "original_class_id": 45
+    },
+    {
+      "id": "f3cb647a-925c-50d7-89cf-8960e141a11c",
+      "slug": "pho",
+      "name_vi": "Phở",
+      "name_en": "Vietnamese noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 45,
+      "original_class_id": 46
+    },
+    {
+      "id": "a5329c99-9f67-53b8-96e7-506e3e12956c",
+      "slug": "pho_mai",
+      "name_vi": "Phô mai",
+      "name_en": "Cheese",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 46,
+      "original_class_id": 47
+    },
+    {
+      "id": "a6315121-265d-51fc-a2a2-7c17cdedcaf2",
+      "slug": "rau",
+      "name_vi": "Rau",
+      "name_en": "Vegetables",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 47,
+      "original_class_id": 48
+    },
+    {
+      "id": "3d067f6c-91d4-5840-9b21-ce5b8f163d4a",
+      "slug": "salad",
+      "name_vi": "Salad",
+      "name_en": "Salad",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 48,
+      "original_class_id": 49
+    },
+    {
+      "id": "6618a8c2-a81a-565a-8abe-b59925d9eecb",
+      "slug": "thit_bo",
+      "name_vi": "Thịt bò",
+      "name_en": "Beef",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 49,
+      "original_class_id": 50
+    },
+    {
+      "id": "d7749de2-9b6b-5c1f-8f28-b88f3bb4a405",
+      "slug": "thit_ga",
+      "name_vi": "Thịt gà",
+      "name_en": "Chicken",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 50,
+      "original_class_id": 51
+    },
+    {
+      "id": "7d4b0bd0-9a0b-5d97-a6ce-d602dc5e1d26",
+      "slug": "thit_heo",
+      "name_vi": "Thịt heo",
+      "name_en": "Pork",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 51,
+      "original_class_id": 52
+    },
+    {
+      "id": "ff5c38ec-c7a7-5046-a1f7-f5ffae8282a1",
+      "slug": "thit_kho",
+      "name_vi": "Thịt kho",
+      "name_en": "Braised pork",
+      "scope_kind": "prepared_food",
+      "training_class_id": 52,
+      "original_class_id": 53
+    },
+    {
+      "id": "1fe75448-3283-5cb8-bb53-e09517f36c73",
+      "slug": "thit_nuong",
+      "name_vi": "Thịt nướng",
+      "name_en": "Grilled meat",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 53,
+      "original_class_id": 54
+    },
+    {
+      "id": "df4f0764-c038-5f1d-9340-afd1a274b29e",
+      "slug": "tom",
+      "name_vi": "Tôm",
+      "name_en": "Shrimp",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 54,
+      "original_class_id": 55
+    },
+    {
+      "id": "cfa4a4ab-ecd1-5403-b256-e4c6477742bf",
+      "slug": "trung",
+      "name_vi": "Trứng",
+      "name_en": "Egg",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 55,
+      "original_class_id": 56
+    },
+    {
+      "id": "5b7f8150-5fba-575e-af93-70dbfd80e4f1",
+      "slug": "xoi",
+      "name_vi": "Xôi",
+      "name_en": "Sticky rice",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 56,
+      "original_class_id": 57
+    },
+    {
+      "id": "24ac7269-f39a-5ef1-bcbc-531063436c11",
+      "slug": "banh_beo",
+      "name_vi": "Bánh bèo",
+      "name_en": "Vietnamese savory steamed rice cake",
+      "scope_kind": "prepared_food",
+      "training_class_id": 57,
+      "original_class_id": 58
+    },
+    {
+      "id": "eec82cb1-ed19-5f9b-b409-74c47b9ad39e",
+      "slug": "cao_lau",
+      "name_vi": "Cao lầu",
+      "name_en": "Cao lau noodles",
+      "scope_kind": "prepared_food",
+      "training_class_id": 58,
+      "original_class_id": 59
+    },
+    {
+      "id": "6a55d6fa-8d53-5343-9de8-a8730784071a",
+      "slug": "mi_quang",
+      "name_vi": "Mì Quảng",
+      "name_en": "Quang-style noodles",
+      "scope_kind": "prepared_food",
+      "training_class_id": 59,
+      "original_class_id": 60
+    },
+    {
+      "id": "26e1902d-666c-5cd8-a3b9-2578fd9fa4b3",
+      "slug": "com_chien_duong_chau",
+      "name_vi": "Cơm chiên Dương Châu",
+      "name_en": "Yangzhou fried rice",
+      "scope_kind": "prepared_food",
+      "training_class_id": 60,
+      "original_class_id": 61
+    },
+    {
+      "id": "1d6dff80-121d-5428-8c6c-96caa421e53e",
+      "slug": "bun_cha_ca",
+      "name_vi": "Bún chả cá",
+      "name_en": "Fish cake noodle soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 61,
+      "original_class_id": 62
+    },
+    {
+      "id": "6b98b407-3572-52c0-8239-a29627b20ba9",
+      "slug": "com_chien_ga",
+      "name_vi": "Cơm chiên gà",
+      "name_en": "Fried rice with chicken",
+      "scope_kind": "prepared_food",
+      "training_class_id": 62,
+      "original_class_id": 63
+    },
+    {
+      "id": "c25dd45b-6698-5a97-9d96-33160ae3033e",
+      "slug": "chao_long",
+      "name_vi": "Cháo lòng",
+      "name_en": "Pork organ congee",
+      "scope_kind": "prepared_food",
+      "training_class_id": 63,
+      "original_class_id": 64
+    },
+    {
+      "id": "4528404e-68a2-5bd1-b896-46ce6ea3d8c4",
+      "slug": "nom_hoa_chuoi",
+      "name_vi": "Nộm hoa chuối",
+      "name_en": "Banana blossom salad",
+      "scope_kind": "prepared_food",
+      "training_class_id": 64,
+      "original_class_id": 65
+    },
+    {
+      "id": "f176cce1-f45c-5a7b-87a6-3f069d014f4f",
+      "slug": "nui_xao_bo",
+      "name_vi": "Nui xào bò",
+      "name_en": "Stir-fried macaroni with beef",
+      "scope_kind": "prepared_food",
+      "training_class_id": 65,
+      "original_class_id": 66
+    },
+    {
+      "id": "7f0357bf-9891-5000-94af-72d13d203ab6",
+      "slug": "sup_cua",
+      "name_vi": "Súp cua",
+      "name_en": "Crab soup",
+      "scope_kind": "prepared_food",
+      "training_class_id": 66,
+      "original_class_id": 67
+    },
+    {
+      "id": "94d34795-c510-530a-ba47-576ea9c3dc09",
+      "slug": "chuoi",
+      "name_vi": "Chuối",
+      "name_en": "Banana",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 67,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 0,
+      "aliases": [
+        "banana"
+      ]
+    },
+    {
+      "id": "44e7a64e-2c43-5c0c-89e6-9253d1e59298",
+      "slug": "tao",
+      "name_vi": "Táo",
+      "name_en": "Apple",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 68,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 1,
+      "aliases": [
+        "apple"
+      ]
+    },
+    {
+      "id": "60d0fad3-3d72-5c98-800b-7582f784b37b",
+      "slug": "ga_nuong",
+      "name_vi": "Gà nướng",
+      "name_en": "Grilled chicken",
+      "scope_kind": "prepared_food",
+      "training_class_id": 69,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 2,
+      "aliases": [
+        "grilled_chicken",
+        "roasted chicken",
+        "grilled_chicken_breast"
+      ]
+    },
+    {
+      "id": "d56ba32e-e39d-5708-96d0-9fcccbfc6060",
+      "slug": "ca_hoi_nuong",
+      "name_vi": "Cá hồi nướng",
+      "name_en": "Grilled salmon",
+      "scope_kind": "prepared_food",
+      "training_class_id": 70,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 3,
+      "aliases": [
+        "grilled_salmon"
+      ]
+    },
+    {
+      "id": "c0053ada-1a8b-5194-b89d-455f5193601c",
+      "slug": "khoai_lang",
+      "name_vi": "Khoai lang",
+      "name_en": "Sweet potato",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 71,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 4,
+      "aliases": [
+        "sweet_potato"
+      ]
+    },
+    {
+      "id": "f502f80e-12a1-563b-9b46-354360d31011",
+      "slug": "khom",
+      "name_vi": "Khóm",
+      "name_en": "Pineapple",
+      "scope_kind": "ingredient_or_component",
+      "training_class_id": 72,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 5,
+      "aliases": [
+        "pineapple",
+        "dứa",
+        "thơm"
+      ]
+    },
+    {
+      "id": "254cea80-105c-5827-85c3-3e0775a2c923",
+      "slug": "ca_phe",
+      "name_vi": "Cà phê",
+      "name_en": "Coffee",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 73,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 6,
+      "aliases": [
+        "coffee"
+      ]
+    },
+    {
+      "id": "12df07be-30ad-5d7d-901c-ac8c76a88ce7",
+      "slug": "nuoc_ngot",
+      "name_vi": "Nước ngọt",
+      "name_en": "Soft drink",
+      "scope_kind": "broad_food_category",
+      "training_class_id": 74,
+      "original_class_id": null,
+      "source_namespace": "foodlens-owner-extension-2026-10-16",
+      "source_class_id": 7,
+      "aliases": [
+        "soft_drink"
+      ]
+    }
+  ]
+}

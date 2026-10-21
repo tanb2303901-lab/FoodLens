@@ -1,0 +1,41 @@
+{
+  "bundle_version": 2,
+  "stage": "evaluated",
+  "model_version": "foodlens-yolo11n-20261016-extension4h-v2-dual75",
+  "task": "detect",
+  "architecture": "yolo11n-frozen67-plus8",
+  "class_count": 75,
+  "class_map_version": "foodlens-75-2026-10-16-v2",
+  "legacy_weights_file": "legacy-weights.pt",
+  "legacy_weights_sha256": "a41bffd69d9c1e072583a18e5de9825e9ef6a2ba9fdde477e87037cda98440eb",
+  "class_map_file": "food-identities-v2.json",
+  "class_map_sha256": "588c35ed6184c182918bdd5e77fa02f7d1b8845ad8387a4a6e2f497218ae3e56",
+  "weights_file": "weights.pt",
+  "weights_sha256": "4fff4aed1fd49d63424d6fc7616ff875b5c3a885ee321384ce004869468f7641",
+  "evaluation_file": "evaluation.json",
+  "evaluation_sha256": "62d03615d0c04d99e1a58be44d7b0845d5780d5c8e815d15f2f7d45604eee12e",
+  "imgsz": 512,
+  "confidence": 0.25,
+  "nms_iou": 0.7,
+  "max_detections": 100,
+  "input_contract": "canonical_static_RGB_JPEG_EXIF_applied",
+  "bbox_output": "xyxy_norm_canonical",
+  "ultralytics_version": "8.4.158",
+  "torch_version": "2.11.0+cu126",
+  "training": {
+    "budget_hours": 3.0,
+    "elapsed_seconds": 4507.060313999973,
+    "completed_epochs": 70,
+    "epochs_with_updates": 70,
+    "partial_final_epoch": false,
+    "source_model_version": "foodlens-yolo11n-20261015-budget8h-v1",
+    "source_weights_sha256": "a41bffd69d9c1e072583a18e5de9825e9ef6a2ba9fdde477e87037cda98440eb",
+    "dataset_export_sha256": "3771541e3aeb19a590c3f41e0e807ba06a8f6f821524f54118a806c9eaba0c4b",
+    "scope": "owner_extension_75_mixed_replay"
+  },
+  "inference_compatible": true,
+  "quality_status": "experimental_extension_pending_owner_quality_acceptance",
+  "source_pretrained": {
+    "license": "https://github.com/ultralytics/ultralytics/blob/main/LICENSE"
+  }
+}

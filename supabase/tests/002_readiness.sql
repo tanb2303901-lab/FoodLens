@@ -1,0 +1,11 @@
+begin;
+select plan(5);
+select ok(has_function_privilege('anon','public.core_readiness()','EXECUTE'),'anon can probe readiness');
+select ok(not has_table_privilege('anon','public.foods','SELECT'),'probe does not grant catalog access');
+select is((select proconfig::text from pg_proc where oid='public.core_readiness()'::regprocedure),'{"search_path=\"\""}','fixed empty search path');
+set local role anon;
+select is(public.core_readiness(),true,'anonymous probe executes real fixed DB reads');
+reset role;
+select ok((select prosecdef from pg_proc where oid='public.core_readiness()'::regprocedure),'probe is fixed definer function');
+select * from finish();
+rollback;

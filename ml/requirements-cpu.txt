@@ -1,0 +1,6 @@
+# Teammate/dev runtime: backend + CPU-only model inference (no GPU, no training).
+# Same pinned versions as the owner's CUDA lock, without the +cu126 builds.
+-r ../backend/requirements.lock.txt
+torch==2.11.0
+torchvision==0.26.0
+ultralytics==8.4.158

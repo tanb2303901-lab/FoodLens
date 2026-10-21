@@ -1,0 +1,1563 @@
+{
+  "artifact_version": 1,
+  "model_version": "foodlens-yolo11n-20261015-budget8h-v1",
+  "technical_status": "ready_for_owner_test",
+  "scope": "Eight-hour experimental local detector baseline; no full 67-class quality/mobile/nutrition acceptance",
+  "completed_at_utc": "2026-10-15T15:39:43.940381+00:00",
+  "recorded_at_utc": "2026-10-15T15:44:47.837233+00:00",
+  "architecture": "yolo11n",
+  "class_count": 67,
+  "class_map_version": "vietfood-67-2026-10-12-v1",
+  "class_map_sha256": "56e22da594d45bd750b0a0a008d596e4381dfb3e2f6c8029f12afb4e8fe7acd8",
+  "weights_sha256": "a41bffd69d9c1e072583a18e5de9825e9ef6a2ba9fdde477e87037cda98440eb",
+  "evaluation_sha256": "bc1ae48262a7c35b631f8d583712c0532791c2a50c0287bdcf24478328ffdefd",
+  "model_card_sha256": "f3886b8d438f22ed7b4dc5919fa191836082f7d270ca72f56039164caa889c92",
+  "training": {
+    "budget_hours": 8.0,
+    "elapsed_seconds": 28642.547,
+    "scope": "full_audited_effective_train",
+    "source_dataset_images": {
+      "test": 404,
+      "train": 161247,
+      "valid": 787
+    },
+    "raw_export_boxes": {
+      "test": 591,
+      "train": 822457,
+      "valid": 1319
+    },
+    "native_train": {
+      "images": 161247,
+      "boxes": 822311,
+      "class_count": 67,
+      "background_images": 630
+    },
+    "completed_epochs": 14,
+    "dataset_export_sha256": "68bcbad5417a7024cda9588a147d8354e8eee9429a3974c4253140152d7004b9",
+    "epochs_with_updates": 15,
+    "partial_final_epoch": true,
+    "source_baseline_version": "foodlens-source-2026-10-12-v1"
+  },
+  "inference": {
+    "imgsz": 512,
+    "confidence": 0.25,
+    "nms_iou": 0.7,
+    "max_detections": 100,
+    "input_contract": "canonical_static_RGB_JPEG_EXIF_applied",
+    "bbox_output": "xyxy_norm_canonical"
+  },
+  "library_versions": {
+    "torch_version": "2.11.0+cu126",
+    "ultralytics_version": "8.4.158"
+  },
+  "splits": {
+    "val": {
+      "aggregate": {
+        "metrics/precision(B)": 0.5771571008163026,
+        "metrics/recall(B)": 0.7036415589937502,
+        "metrics/mAP50(B)": 0.6705173621456535,
+        "metrics/mAP50-95(B)": 0.5131091115650369,
+        "fitness": 0.5131091115650369
+      },
+      "speed_ms": {
+        "preprocess": 0.1781383735879787,
+        "inference": 1.9517186785050522,
+        "loss": 0.00015705214603892808,
+        "postprocess": 0.6024675985203294
+      },
+      "present_classes": [
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14,
+        18,
+        20,
+        22,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        35,
+        37,
+        39,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        53,
+        55,
+        56,
+        57,
+        58,
+        60,
+        63
+      ],
+      "missing_classes": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8,
+        9,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        23,
+        25,
+        29,
+        34,
+        36,
+        38,
+        40,
+        41,
+        42,
+        43,
+        50,
+        52,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        66
+      ],
+      "class_count": 35,
+      "ground_truth_boxes": 1319,
+      "maximum_objects_per_image": 22,
+      "native_dataset": {
+        "images": 787,
+        "boxes": 1319,
+        "class_count": 35,
+        "background_images": 1
+      },
+      "raw_export_ground_truth_boxes": 1319,
+      "removed_duplicate_labels": 0,
+      "per_class": [
+        {
+          "training_class_id": 0,
+          "name_vi": "Bánh canh",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 1,
+          "name_vi": "Bánh chưng",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 2,
+          "name_vi": "Bánh cuốn",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 3,
+          "name_vi": "Bánh khọt",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 4,
+          "name_vi": "Bánh mì",
+          "ground_truth_images": 45,
+          "ground_truth_boxes": 78,
+          "metrics": {
+            "precision": 0.8043088874266189,
+            "recall": 0.7904406916415155,
+            "ap50": 0.8278894345318092,
+            "ap50_95": 0.6566642276998043
+          }
+        },
+        {
+          "training_class_id": 5,
+          "name_vi": "Bánh tráng",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 6,
+          "name_vi": "Bánh tráng trộn",
+          "ground_truth_images": 35,
+          "ground_truth_boxes": 40,
+          "metrics": {
+            "precision": 0.7911439432775295,
+            "recall": 0.9470518400852663,
+            "ap50": 0.949803163366901,
+            "ap50_95": 0.6940402508829293
+          }
+        },
+        {
+          "training_class_id": 7,
+          "name_vi": "Bánh xèo",
+          "ground_truth_images": 19,
+          "ground_truth_boxes": 26,
+          "metrics": {
+            "precision": 0.8647905264595905,
+            "recall": 0.8461538461538461,
+            "ap50": 0.9244682539682539,
+            "ap50_95": 0.7903187210450369
+          }
+        },
+        {
+          "training_class_id": 8,
+          "name_vi": "Bò kho",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 9,
+          "name_vi": "Bò lá lốt",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 10,
+          "name_vi": "Bông cải",
+          "ground_truth_images": 26,
+          "ground_truth_boxes": 44,
+          "metrics": {
+            "precision": 0.5345365248497547,
+            "recall": 0.5909090909090909,
+            "ap50": 0.564416602911405,
+            "ap50_95": 0.4236714145714536
+          }
+        },
+        {
+          "training_class_id": 11,
+          "name_vi": "Bún",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.09416146852775464,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.9949999999999999
+          }
+        },
+        {
+          "training_class_id": 12,
+          "name_vi": "Bún bò Huế",
+          "ground_truth_images": 38,
+          "ground_truth_boxes": 42,
+          "metrics": {
+            "precision": 0.7596996132227667,
+            "recall": 0.9047619047619048,
+            "ap50": 0.9261743703931203,
+            "ap50_95": 0.540699431534641
+          }
+        },
+        {
+          "training_class_id": 13,
+          "name_vi": "Bún chả",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 14,
+          "name_vi": "Bún đậu",
+          "ground_truth_images": 37,
+          "ground_truth_boxes": 44,
+          "metrics": {
+            "precision": 0.8438752462140873,
+            "recall": 0.9772727272727273,
+            "ap50": 0.9877323735695828,
+            "ap50_95": 0.684285704562683
+          }
+        },
+        {
+          "training_class_id": 15,
+          "name_vi": "Bún mắm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 16,
+          "name_vi": "Bún riêu",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 17,
+          "name_vi": "Cá",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 18,
+          "name_vi": "Cà chua",
+          "ground_truth_images": 10,
+          "ground_truth_boxes": 36,
+          "metrics": {
+            "precision": 0.34165134827134486,
+            "recall": 0.1111111111111111,
+            "ap50": 0.17129070733733154,
+            "ap50_95": 0.13360199649075857
+          }
+        },
+        {
+          "training_class_id": 19,
+          "name_vi": "Cà pháo",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 20,
+          "name_vi": "Cà rốt",
+          "ground_truth_images": 8,
+          "ground_truth_boxes": 19,
+          "metrics": {
+            "precision": 0.44807330089804187,
+            "recall": 0.08886525291517111,
+            "ap50": 0.1601234906393566,
+            "ap50_95": 0.08882155806911105
+          }
+        },
+        {
+          "training_class_id": 21,
+          "name_vi": "Canh",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 22,
+          "name_vi": "Chả",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ap50": 0.07653846153846157,
+            "ap50_95": 0.0688846153846154
+          }
+        },
+        {
+          "training_class_id": 23,
+          "name_vi": "Chả giò",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 24,
+          "name_vi": "Chanh",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.030222048266484516,
+            "recall": 1.0,
+            "ap50": 0.06633333333333333,
+            "ap50_95": 0.046433333333333326
+          }
+        },
+        {
+          "training_class_id": 25,
+          "name_vi": "Cơm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 26,
+          "name_vi": "Cơm tấm",
+          "ground_truth_images": 23,
+          "ground_truth_boxes": 23,
+          "metrics": {
+            "precision": 0.6720042646052263,
+            "recall": 1.0,
+            "ap50": 0.9490991050859472,
+            "ap50_95": 0.8337664673046252
+          }
+        },
+        {
+          "training_class_id": 27,
+          "name_vi": "Củ kiệu",
+          "ground_truth_images": 2,
+          "ground_truth_boxes": 2,
+          "metrics": {
+            "precision": 0.6321847831742904,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.6955
+          }
+        },
+        {
+          "training_class_id": 28,
+          "name_vi": "Cua",
+          "ground_truth_images": 4,
+          "ground_truth_boxes": 4,
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "ap50": 0.1690322580645161,
+            "ap50_95": 0.1261767330130405
+          }
+        },
+        {
+          "training_class_id": 29,
+          "name_vi": "Đậu hũ",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 30,
+          "name_vi": "Dưa chua",
+          "ground_truth_images": 3,
+          "ground_truth_boxes": 3,
+          "metrics": {
+            "precision": 0.3092700873362842,
+            "recall": 0.3333333333333333,
+            "ap50": 0.28123076923076934,
+            "ap50_95": 0.2797076923076924
+          }
+        },
+        {
+          "training_class_id": 31,
+          "name_vi": "Dưa leo",
+          "ground_truth_images": 18,
+          "ground_truth_boxes": 51,
+          "metrics": {
+            "precision": 0.45543735068144764,
+            "recall": 0.229739885074147,
+            "ap50": 0.30266149879607124,
+            "ap50_95": 0.1841452711526866
+          }
+        },
+        {
+          "training_class_id": 32,
+          "name_vi": "Gỏi cuốn",
+          "ground_truth_images": 32,
+          "ground_truth_boxes": 35,
+          "metrics": {
+            "precision": 0.607922193291821,
+            "recall": 0.7714285714285715,
+            "ap50": 0.7564465709941965,
+            "ap50_95": 0.4860596096703997
+          }
+        },
+        {
+          "training_class_id": 33,
+          "name_vi": "Hamburger",
+          "ground_truth_images": 82,
+          "ground_truth_boxes": 114,
+          "metrics": {
+            "precision": 0.7593076905351369,
+            "recall": 0.7280701754385965,
+            "ap50": 0.8195614397554987,
+            "ap50_95": 0.6068040951825657
+          }
+        },
+        {
+          "training_class_id": 34,
+          "name_vi": "Heo quay",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 35,
+          "name_vi": "Hủ tiếu",
+          "ground_truth_images": 23,
+          "ground_truth_boxes": 23,
+          "metrics": {
+            "precision": 0.5020836478298925,
+            "recall": 0.4385875308198036,
+            "ap50": 0.6076668624153834,
+            "ap50_95": 0.39619256675498943
+          }
+        },
+        {
+          "training_class_id": 36,
+          "name_vi": "Khổ qua nhồi thịt",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 37,
+          "name_vi": "Khoai tây chiên",
+          "ground_truth_images": 76,
+          "ground_truth_boxes": 77,
+          "metrics": {
+            "precision": 0.8230617292254399,
+            "recall": 0.9061997806663555,
+            "ap50": 0.919733055867527,
+            "ap50_95": 0.7069476991986103
+          }
+        },
+        {
+          "training_class_id": 38,
+          "name_vi": "Lẩu",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 39,
+          "name_vi": "Lòng heo",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.933818103573174,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.8955
+          }
+        },
+        {
+          "training_class_id": 40,
+          "name_vi": "Mì",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 41,
+          "name_vi": "Mực",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 42,
+          "name_vi": "Nấm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 43,
+          "name_vi": "Ốc",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 44,
+          "name_vi": "Ớt chuông",
+          "ground_truth_images": 46,
+          "ground_truth_boxes": 113,
+          "metrics": {
+            "precision": 0.6869473554681068,
+            "recall": 0.8584070796460177,
+            "ap50": 0.8498317810865335,
+            "ap50_95": 0.634559817912818
+          }
+        },
+        {
+          "training_class_id": 45,
+          "name_vi": "Phở",
+          "ground_truth_images": 51,
+          "ground_truth_boxes": 61,
+          "metrics": {
+            "precision": 0.8065971954187663,
+            "recall": 0.9016393442622951,
+            "ap50": 0.9371115119680611,
+            "ap50_95": 0.4961457539205748
+          }
+        },
+        {
+          "training_class_id": 46,
+          "name_vi": "Phô mai",
+          "ground_truth_images": 79,
+          "ground_truth_boxes": 214,
+          "metrics": {
+            "precision": 0.7390254398267695,
+            "recall": 0.6635514018691588,
+            "ap50": 0.7484767742052777,
+            "ap50_95": 0.5943856108324622
+          }
+        },
+        {
+          "training_class_id": 47,
+          "name_vi": "Rau",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.02648845714725915,
+            "recall": 1.0,
+            "ap50": 0.33166666666666667,
+            "ap50_95": 0.2321666666666667
+          }
+        },
+        {
+          "training_class_id": 48,
+          "name_vi": "Salad",
+          "ground_truth_images": 34,
+          "ground_truth_boxes": 38,
+          "metrics": {
+            "precision": 0.6532496867690151,
+            "recall": 0.2894736842105263,
+            "ap50": 0.4575654292331798,
+            "ap50_95": 0.3265419943895414
+          }
+        },
+        {
+          "training_class_id": 49,
+          "name_vi": "Thịt bò",
+          "ground_truth_images": 2,
+          "ground_truth_boxes": 2,
+          "metrics": {
+            "precision": 0.407679966530561,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.8455
+          }
+        },
+        {
+          "training_class_id": 50,
+          "name_vi": "Thịt gà",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 51,
+          "name_vi": "Thịt heo",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.2887435644600321,
+            "recall": 0.8662306933800963,
+            "ap50": 0.33166666666666667,
+            "ap50_95": 0.2321666666666667
+          }
+        },
+        {
+          "training_class_id": 52,
+          "name_vi": "Thịt kho",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 53,
+          "name_vi": "Thịt nướng",
+          "ground_truth_images": 15,
+          "ground_truth_boxes": 16,
+          "metrics": {
+            "precision": 0.7600218875101474,
+            "recall": 0.7925930219181267,
+            "ap50": 0.7758667238778801,
+            "ap50_95": 0.6497046229956286
+          }
+        },
+        {
+          "training_class_id": 54,
+          "name_vi": "Tôm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 55,
+          "name_vi": "Trứng",
+          "ground_truth_images": 25,
+          "ground_truth_boxes": 42,
+          "metrics": {
+            "precision": 0.3663126048750554,
+            "recall": 0.35714285714285715,
+            "ap50": 0.3985899881810624,
+            "ap50_95": 0.3003047980666901
+          }
+        },
+        {
+          "training_class_id": 56,
+          "name_vi": "Xôi",
+          "ground_truth_images": 43,
+          "ground_truth_boxes": 54,
+          "metrics": {
+            "precision": 0.6997820567740275,
+            "recall": 0.9074074074074074,
+            "ap50": 0.865951462757475,
+            "ap50_95": 0.6597085772180045
+          }
+        },
+        {
+          "training_class_id": 57,
+          "name_vi": "Bánh bèo",
+          "ground_truth_images": 13,
+          "ground_truth_boxes": 96,
+          "metrics": {
+            "precision": 0.7075331868044789,
+            "recall": 0.9270833333333334,
+            "ap50": 0.9173470098236922,
+            "ap50_95": 0.5840303868656422
+          }
+        },
+        {
+          "training_class_id": 58,
+          "name_vi": "Cao lầu",
+          "ground_truth_images": 4,
+          "ground_truth_boxes": 5,
+          "metrics": {
+            "precision": 0.6611879196097774,
+            "recall": 0.6,
+            "ap50": 0.6867948717948718,
+            "ap50_95": 0.5052307692307692
+          }
+        },
+        {
+          "training_class_id": 59,
+          "name_vi": "Mì Quảng",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 60,
+          "name_vi": "Cơm chiên Dương Châu",
+          "ground_truth_images": 6,
+          "ground_truth_boxes": 6,
+          "metrics": {
+            "precision": 0.7713940042612768,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.8616333333333334
+          }
+        },
+        {
+          "training_class_id": 61,
+          "name_vi": "Bún chả cá",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 62,
+          "name_vi": "Cơm chiên gà",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 63,
+          "name_vi": "Cháo lòng",
+          "ground_truth_images": 3,
+          "ground_truth_boxes": 5,
+          "metrics": {
+            "precision": 0.4179824454486265,
+            "recall": 0.8,
+            "ap50": 0.732037037037037,
+            "ap50_95": 0.7035185185185185
+          }
+        },
+        {
+          "training_class_id": 64,
+          "name_vi": "Nộm hoa chuối",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 65,
+          "name_vi": "Nui xào bò",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 66,
+          "name_vi": "Súp cua",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        }
+      ],
+      "conf_for_ap": 0.001,
+      "nms_iou": 0.7,
+      "max_detections": 100,
+      "interpretation": "Metrics apply only to classes present in this received split; absent classes are unmeasured, not assigned average AP."
+    },
+    "test": {
+      "aggregate": {
+        "metrics/precision(B)": 0.7684317201697397,
+        "metrics/recall(B)": 0.6692925007836699,
+        "metrics/mAP50(B)": 0.7406186698559256,
+        "metrics/mAP50-95(B)": 0.5469416171166893,
+        "fitness": 0.5469416171166893
+      },
+      "speed_ms": {
+        "preprocess": 0.17014158421972914,
+        "inference": 1.876622772188327,
+        "loss": 0.00015569299414504946,
+        "postprocess": 0.6499824257573864
+      },
+      "present_classes": [
+        2,
+        4,
+        6,
+        7,
+        10,
+        12,
+        14,
+        18,
+        20,
+        24,
+        26,
+        28,
+        31,
+        32,
+        33,
+        35,
+        37,
+        44,
+        45,
+        46,
+        48,
+        49,
+        53,
+        55,
+        56,
+        57,
+        58,
+        60,
+        63
+      ],
+      "missing_classes": [
+        0,
+        1,
+        3,
+        5,
+        8,
+        9,
+        11,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        22,
+        23,
+        25,
+        27,
+        29,
+        30,
+        34,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        47,
+        50,
+        51,
+        52,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        66
+      ],
+      "class_count": 29,
+      "ground_truth_boxes": 591,
+      "maximum_objects_per_image": 12,
+      "native_dataset": {
+        "images": 404,
+        "boxes": 591,
+        "class_count": 29,
+        "background_images": 1
+      },
+      "raw_export_ground_truth_boxes": 591,
+      "removed_duplicate_labels": 0,
+      "per_class": [
+        {
+          "training_class_id": 0,
+          "name_vi": "Bánh canh",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 1,
+          "name_vi": "Bánh chưng",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 2,
+          "name_vi": "Bánh cuốn",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.864444815922853,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.199
+          }
+        },
+        {
+          "training_class_id": 3,
+          "name_vi": "Bánh khọt",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 4,
+          "name_vi": "Bánh mì",
+          "ground_truth_images": 12,
+          "ground_truth_boxes": 18,
+          "metrics": {
+            "precision": 0.9402188207855962,
+            "recall": 0.8744177363156749,
+            "ap50": 0.9211558028616853,
+            "ap50_95": 0.7703669120867113
+          }
+        },
+        {
+          "training_class_id": 5,
+          "name_vi": "Bánh tráng",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 6,
+          "name_vi": "Bánh tráng trộn",
+          "ground_truth_images": 16,
+          "ground_truth_boxes": 17,
+          "metrics": {
+            "precision": 0.7676781533250286,
+            "recall": 0.8235294117647058,
+            "ap50": 0.9055405405405406,
+            "ap50_95": 0.7404685897435898
+          }
+        },
+        {
+          "training_class_id": 7,
+          "name_vi": "Bánh xèo",
+          "ground_truth_images": 17,
+          "ground_truth_boxes": 19,
+          "metrics": {
+            "precision": 0.971297112725238,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.9264551984930275
+          }
+        },
+        {
+          "training_class_id": 8,
+          "name_vi": "Bò kho",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 9,
+          "name_vi": "Bò lá lốt",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 10,
+          "name_vi": "Bông cải",
+          "ground_truth_images": 13,
+          "ground_truth_boxes": 25,
+          "metrics": {
+            "precision": 0.7679505901694972,
+            "recall": 0.44,
+            "ap50": 0.5047176937663287,
+            "ap50_95": 0.39684376347671885
+          }
+        },
+        {
+          "training_class_id": 11,
+          "name_vi": "Bún",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 12,
+          "name_vi": "Bún bò Huế",
+          "ground_truth_images": 24,
+          "ground_truth_boxes": 30,
+          "metrics": {
+            "precision": 0.8735041828886457,
+            "recall": 0.9209679118794715,
+            "ap50": 0.9528091841612712,
+            "ap50_95": 0.5439935915465861
+          }
+        },
+        {
+          "training_class_id": 13,
+          "name_vi": "Bún chả",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 14,
+          "name_vi": "Bún đậu",
+          "ground_truth_images": 17,
+          "ground_truth_boxes": 17,
+          "metrics": {
+            "precision": 0.9436945147897771,
+            "recall": 0.9865012662159865,
+            "ap50": 0.9922222222222222,
+            "ap50_95": 0.750002380952381
+          }
+        },
+        {
+          "training_class_id": 15,
+          "name_vi": "Bún mắm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 16,
+          "name_vi": "Bún riêu",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 17,
+          "name_vi": "Cá",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 18,
+          "name_vi": "Cà chua",
+          "ground_truth_images": 6,
+          "ground_truth_boxes": 12,
+          "metrics": {
+            "precision": 0.4697983802898301,
+            "recall": 0.08333333333333333,
+            "ap50": 0.14740814907523295,
+            "ap50_95": 0.10399843982739135
+          }
+        },
+        {
+          "training_class_id": 19,
+          "name_vi": "Cà pháo",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 20,
+          "name_vi": "Cà rốt",
+          "ground_truth_images": 7,
+          "ground_truth_boxes": 15,
+          "metrics": {
+            "precision": 0.5003269578634043,
+            "recall": 0.13333333333333333,
+            "ap50": 0.1915225913215686,
+            "ap50_95": 0.07867562340428678
+          }
+        },
+        {
+          "training_class_id": 21,
+          "name_vi": "Canh",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 22,
+          "name_vi": "Chả",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 23,
+          "name_vi": "Chả giò",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 24,
+          "name_vi": "Chanh",
+          "ground_truth_images": 1,
+          "ground_truth_boxes": 1,
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ap50": 0.043260869565217394,
+            "ap50_95": 0.030282608695652174
+          }
+        },
+        {
+          "training_class_id": 25,
+          "name_vi": "Cơm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 26,
+          "name_vi": "Cơm tấm",
+          "ground_truth_images": 11,
+          "ground_truth_boxes": 11,
+          "metrics": {
+            "precision": 0.7069564956611438,
+            "recall": 0.8181818181818182,
+            "ap50": 0.8183065164923573,
+            "ap50_95": 0.6703460176991152
+          }
+        },
+        {
+          "training_class_id": 27,
+          "name_vi": "Củ kiệu",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 28,
+          "name_vi": "Cua",
+          "ground_truth_images": 2,
+          "ground_truth_boxes": 2,
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "ap50": 0.3586111111111111,
+            "ap50_95": 0.2586111111111111
+          }
+        },
+        {
+          "training_class_id": 29,
+          "name_vi": "Đậu hũ",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 30,
+          "name_vi": "Dưa chua",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 31,
+          "name_vi": "Dưa leo",
+          "ground_truth_images": 10,
+          "ground_truth_boxes": 20,
+          "metrics": {
+            "precision": 0.582556339970664,
+            "recall": 0.3,
+            "ap50": 0.4187311897638325,
+            "ap50_95": 0.2949474695627308
+          }
+        },
+        {
+          "training_class_id": 32,
+          "name_vi": "Gỏi cuốn",
+          "ground_truth_images": 15,
+          "ground_truth_boxes": 15,
+          "metrics": {
+            "precision": 0.8533716208435269,
+            "recall": 0.9333333333333333,
+            "ap50": 0.9849999999999999,
+            "ap50_95": 0.7423684668763277
+          }
+        },
+        {
+          "training_class_id": 33,
+          "name_vi": "Hamburger",
+          "ground_truth_images": 43,
+          "ground_truth_boxes": 56,
+          "metrics": {
+            "precision": 0.8699663239632789,
+            "recall": 0.8214285714285714,
+            "ap50": 0.9006682787255564,
+            "ap50_95": 0.6881737488967035
+          }
+        },
+        {
+          "training_class_id": 34,
+          "name_vi": "Heo quay",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 35,
+          "name_vi": "Hủ tiếu",
+          "ground_truth_images": 10,
+          "ground_truth_boxes": 10,
+          "metrics": {
+            "precision": 0.5759184755496787,
+            "recall": 0.4,
+            "ap50": 0.5847186147186147,
+            "ap50_95": 0.3224974747474748
+          }
+        },
+        {
+          "training_class_id": 36,
+          "name_vi": "Khổ qua nhồi thịt",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 37,
+          "name_vi": "Khoai tây chiên",
+          "ground_truth_images": 36,
+          "ground_truth_boxes": 36,
+          "metrics": {
+            "precision": 0.968497821089113,
+            "recall": 0.8541621811222233,
+            "ap50": 0.9588799960608961,
+            "ap50_95": 0.7258226448147989
+          }
+        },
+        {
+          "training_class_id": 38,
+          "name_vi": "Lẩu",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 39,
+          "name_vi": "Lòng heo",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 40,
+          "name_vi": "Mì",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 41,
+          "name_vi": "Mực",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 42,
+          "name_vi": "Nấm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 43,
+          "name_vi": "Ốc",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 44,
+          "name_vi": "Ớt chuông",
+          "ground_truth_images": 28,
+          "ground_truth_boxes": 46,
+          "metrics": {
+            "precision": 0.7285239894968338,
+            "recall": 0.7608695652173914,
+            "ap50": 0.7959147205585578,
+            "ap50_95": 0.5454513061394344
+          }
+        },
+        {
+          "training_class_id": 45,
+          "name_vi": "Phở",
+          "ground_truth_images": 16,
+          "ground_truth_boxes": 20,
+          "metrics": {
+            "precision": 0.8798175503545664,
+            "recall": 0.7,
+            "ap50": 0.8383442401239013,
+            "ap50_95": 0.4219077612721681
+          }
+        },
+        {
+          "training_class_id": 46,
+          "name_vi": "Phô mai",
+          "ground_truth_images": 40,
+          "ground_truth_boxes": 85,
+          "metrics": {
+            "precision": 0.7347080483370123,
+            "recall": 0.4235608311544616,
+            "ap50": 0.6253120214669396,
+            "ap50_95": 0.4896956814427331
+          }
+        },
+        {
+          "training_class_id": 47,
+          "name_vi": "Rau",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 48,
+          "name_vi": "Salad",
+          "ground_truth_images": 17,
+          "ground_truth_boxes": 21,
+          "metrics": {
+            "precision": 0.8101211969131885,
+            "recall": 0.20493504320931683,
+            "ap50": 0.39445981762521104,
+            "ap50_95": 0.2827616478479146
+          }
+        },
+        {
+          "training_class_id": 49,
+          "name_vi": "Thịt bò",
+          "ground_truth_images": 2,
+          "ground_truth_boxes": 2,
+          "metrics": {
+            "precision": 0.6061863754415721,
+            "recall": 0.8185591263247163,
+            "ap50": 0.8283333333333331,
+            "ap50_95": 0.6626666666666665
+          }
+        },
+        {
+          "training_class_id": 50,
+          "name_vi": "Thịt gà",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 51,
+          "name_vi": "Thịt heo",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 52,
+          "name_vi": "Thịt kho",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 53,
+          "name_vi": "Thịt nướng",
+          "ground_truth_images": 9,
+          "ground_truth_boxes": 9,
+          "metrics": {
+            "precision": 0.7802290650847309,
+            "recall": 0.7900342143125433,
+            "ap50": 0.9289999999999999,
+            "ap50_95": 0.7161904761904763
+          }
+        },
+        {
+          "training_class_id": 54,
+          "name_vi": "Tôm",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 55,
+          "name_vi": "Trứng",
+          "ground_truth_images": 10,
+          "ground_truth_boxes": 26,
+          "metrics": {
+            "precision": 0.710440241786326,
+            "recall": 0.7307692307692307,
+            "ap50": 0.6710188132099998,
+            "ap50_95": 0.43931377280752804
+          }
+        },
+        {
+          "training_class_id": 56,
+          "name_vi": "Xôi",
+          "ground_truth_images": 27,
+          "ground_truth_boxes": 32,
+          "metrics": {
+            "precision": 0.740242091594538,
+            "recall": 0.71875,
+            "ap50": 0.8185057191174652,
+            "ap50_95": 0.6051059216928572
+          }
+        },
+        {
+          "training_class_id": 57,
+          "name_vi": "Bánh bèo",
+          "ground_truth_images": 4,
+          "ground_truth_boxes": 29,
+          "metrics": {
+            "precision": 0.8056122903633384,
+            "recall": 1.0,
+            "ap50": 0.979,
+            "ap50_95": 0.794226287056272
+          }
+        },
+        {
+          "training_class_id": 58,
+          "name_vi": "Cao lầu",
+          "ground_truth_images": 4,
+          "ground_truth_boxes": 4,
+          "metrics": {
+            "precision": 0.8571673645652094,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.8082499999999999
+          }
+        },
+        {
+          "training_class_id": 59,
+          "name_vi": "Mì Quảng",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 60,
+          "name_vi": "Cơm chiên Dương Châu",
+          "ground_truth_images": 9,
+          "ground_truth_boxes": 9,
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.8728156148303117,
+            "ap50": 0.9344999999999998,
+            "ap50_95": 0.9130499999999998
+          }
+        },
+        {
+          "training_class_id": 61,
+          "name_vi": "Bún chả cá",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 62,
+          "name_vi": "Cơm chiên gà",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 63,
+          "name_vi": "Cháo lòng",
+          "ground_truth_images": 3,
+          "ground_truth_boxes": 3,
+          "metrics": {
+            "precision": 0.9752910651478606,
+            "recall": 1.0,
+            "ap50": 0.995,
+            "ap50_95": 0.9398333333333333
+          }
+        },
+        {
+          "training_class_id": 64,
+          "name_vi": "Nộm hoa chuối",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 65,
+          "name_vi": "Nui xào bò",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        },
+        {
+          "training_class_id": 66,
+          "name_vi": "Súp cua",
+          "ground_truth_images": 0,
+          "ground_truth_boxes": 0,
+          "metrics": null
+        }
+      ],
+      "conf_for_ap": 0.001,
+      "nms_iou": 0.7,
+      "max_detections": 100,
+      "interpretation": "Metrics apply only to classes present in this received split; absent classes are unmeasured, not assigned average AP."
+    }
+  },
+  "batch_one_latency_ms": {
+    "samples": 9,
+    "mean": 8.956422220863816,
+    "min": 8.475900001940317,
+    "max": 9.635499998694286,
+    "hardware": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "real_api_acceptance": {
+    "status": "passed",
+    "checks_passed": 51,
+    "real_photo_count": 8,
+    "real_detection_counts": [
+      5,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "nutrition_status": "nutrition_unavailable",
+    "sample_scope": "effective_test_holdout",
+    "analyze_http_latency_ms": {
+      "samples": 8,
+      "mean": 219.92299999874376,
+      "min": 179.13760000374168,
+      "max": 255.13629999477416,
+      "includes": "client upload, Auth, canonical decode, inference, database and private Storage"
+    }
+  },
+  "quality_accepted": false,
+  "full_67_class_holdout": false,
+  "not_checked": [
+    "Mobile/device/production deployment",
+    "Full 67-class independent holdout",
+    "Production nutrition approval"
+  ],
+  "source_pretrained": {
+    "file": "yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "release": "https://github.com/ultralytics/assets/releases/tag/v8.4.0",
+    "license": "https://github.com/ultralytics/ultralytics/blob/main/LICENSE"
+  }
+}

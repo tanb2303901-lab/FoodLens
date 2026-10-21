@@ -1,0 +1,468 @@
+{
+  "contract_version": "backend-v1-2026-10-20",
+  "provenance": "Real dedicated-local HTTP responses; temporary user/request IDs and non-null cursors replaced with illustrative placeholders. No model inference; food descriptions are owner-reviewed published content or explicit unavailable states. Nutrition, meals and stats were removed (FOOD-02). Tokens, passwords and signed URLs omitted.",
+  "examples": [
+    {
+      "id": "liveness",
+      "method": "GET",
+      "path": "/health",
+      "request": {
+        "authenticated": false
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "status": "alive"
+        }
+      }
+    },
+    {
+      "id": "core_ready_model_missing",
+      "method": "GET",
+      "path": "/health/ready",
+      "request": {
+        "authenticated": false
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "status": "ready",
+          "database": "ready",
+          "model": "not_ready",
+          "capabilities": {
+            "catalog": true,
+            "scan": false
+          }
+        }
+      }
+    },
+    {
+      "id": "anonymous_catalog",
+      "method": "GET",
+      "path": "/v1/foods",
+      "request": {
+        "authenticated": false
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "www-authenticate": "Bearer",
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "error": {
+            "code": "UNAUTHENTICATED",
+            "message": "A valid Supabase user access token is required.",
+            "details": [],
+            "request_id": "50000000-0000-4000-8000-000000000001"
+          }
+        }
+      }
+    },
+    {
+      "id": "profile",
+      "method": "GET",
+      "path": "/v1/me",
+      "request": {
+        "authenticated": true
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "id": "10000000-0000-4000-8000-000000000001",
+          "display_name": "",
+          "timezone": "UTC",
+          "created_at": "2026-10-19T06:14:52.876859Z",
+          "updated_at": "2026-10-19T06:14:52.876859Z"
+        }
+      }
+    },
+    {
+      "id": "profile_timezone",
+      "method": "PATCH",
+      "path": "/v1/me",
+      "request": {
+        "authenticated": true,
+        "body": {
+          "display_name": "FoodLens demo",
+          "timezone": "Asia/Ho_Chi_Minh"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "id": "10000000-0000-4000-8000-000000000001",
+          "display_name": "FoodLens demo",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "created_at": "2026-10-19T06:14:52.876859Z",
+          "updated_at": "2026-10-19T06:14:53.460016Z"
+        }
+      }
+    },
+    {
+      "id": "profile_invalid_timezone",
+      "method": "PATCH",
+      "path": "/v1/me",
+      "request": {
+        "authenticated": true,
+        "body": {
+          "timezone": "Not/AZone"
+        }
+      },
+      "response": {
+        "status": 422,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "error": {
+            "code": "INVALID_TIMEZONE",
+            "message": "Request is invalid for this operation.",
+            "details": [],
+            "request_id": "50000000-0000-4000-8000-000000000001"
+          }
+        }
+      }
+    },
+    {
+      "id": "search_rice",
+      "method": "GET",
+      "path": "/v1/foods",
+      "request": {
+        "authenticated": true,
+        "query": {
+          "q": "Cơm",
+          "limit": 1
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "items": [
+            {
+              "id": "89cde1f5-b817-541d-b122-a6084f566261",
+              "slug": "com",
+              "name_vi": "Cơm",
+              "name_en": "Rice",
+              "scope_kind": "ingredient_or_component",
+              "original_class_id": 25,
+              "training_class_id": 25,
+              "class_map_version": "vietfood-67-2026-10-12-v1"
+            }
+          ],
+          "next_cursor": "OPAQUE_CURSOR_FROM_PREVIOUS_RESPONSE"
+        }
+      }
+    },
+    {
+      "id": "food_detail",
+      "method": "GET",
+      "path": "/v1/foods/{id}",
+      "request": {
+        "authenticated": true,
+        "path_params": {
+          "id": "89cde1f5-b817-541d-b122-a6084f566261"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "id": "89cde1f5-b817-541d-b122-a6084f566261",
+          "slug": "com",
+          "name_vi": "Cơm",
+          "name_en": "Rice",
+          "scope_kind": "ingredient_or_component",
+          "original_class_id": 25,
+          "training_class_id": 25,
+          "class_map_version": "vietfood-67-2026-10-12-v1"
+        }
+      }
+    },
+    {
+      "id": "food_description_unavailable",
+      "method": "GET",
+      "path": "/v1/foods/{id}/description",
+      "request": {
+        "authenticated": true,
+        "path_params": {
+          "id": "89cde1f5-b817-541d-b122-a6084f566261"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "food_id": "89cde1f5-b817-541d-b122-a6084f566261",
+          "slug": "com",
+          "name_vi": "Cơm",
+          "name_en": "Rice",
+          "scope_kind": "ingredient_or_component",
+          "status": "description_unavailable",
+          "reason": "not_published",
+          "description": null,
+          "notice": "Thông tin giới thiệu phổ thông về món ăn; không phải tư vấn sức khỏe, dinh dưỡng hay y tế."
+        }
+      }
+    },
+    {
+      "id": "food_description_available",
+      "method": "GET",
+      "path": "/v1/foods/{id}/description",
+      "request": {
+        "authenticated": true,
+        "path_params": {
+          "id": "f3cb647a-925c-50d7-89cf-8960e141a11c"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "food_id": "f3cb647a-925c-50d7-89cf-8960e141a11c",
+          "slug": "pho",
+          "name_vi": "Phở",
+          "name_en": "Vietnamese noodle soup",
+          "scope_kind": "prepared_food",
+          "status": "available",
+          "reason": null,
+          "description": {
+            "locale": "vi",
+            "version": 1,
+            "content_status": "published",
+            "short_intro": "Phở là món ăn nước nổi tiếng nhất của Việt Nam, gồm bánh phở dẹt làm từ gạo chan nước dùng nóng, thường ăn cùng thịt bò hoặc thịt gà.",
+            "origin_text": "Phở thường được gắn với miền Bắc và được nhiều tài liệu cho là xuất hiện vào khoảng đầu thế kỷ 20; Hà Nội và Nam Định là hai nơi hay được nhắc đến như quê hương của món ăn. Không có sử liệu chính thức ghi lại thời điểm ra đời, và vẫn tồn tại nhiều giả thuyết về nguồn gốc.",
+            "ingredients_summary": "Thường gồm bánh phở, nước dùng ninh nhiều giờ từ xương bò hoặc gà, thịt bò hoặc gà thái mỏng, hành và rau thơm; nước dùng hay được tạo hương bằng hồi, quế, đinh hương. Khi ăn có thể thêm chanh, ớt.",
+            "characteristics": "Nước dùng được xem là yếu tố quyết định một bát phở ngon. Phở kiểu Hà Nội thường có nước trong, chỉ thêm chanh và ớt, còn phở kiểu miền Nam có nước đậm màu hơn và ăn kèm nhiều rau như giá, húng quế. Phở hay được ăn vào bữa sáng.",
+            "scope_note": null,
+            "authoring_method": "ai_assisted_draft",
+            "reviewed_at": "2026-10-19T03:43:40Z",
+            "published_at": "2026-10-19T03:43:40Z",
+            "updated_at": "2026-10-19T03:44:08.248452Z",
+            "sources": [
+              {
+                "source_key": "vnat-21-must-try-dishes",
+                "title": "21 must-try Vietnamese dishes",
+                "publisher": "Viet Nam National Authority of Tourism (vietnam.travel)",
+                "url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes",
+                "language": "en",
+                "source_kind": "government_tourism",
+                "revision_ref": null,
+                "accessed_on": "2026-10-19",
+                "license_note": "Trang thông tin du lịch chính thức (© Vietnam Tourism). Chỉ dùng để đối chiếu thông tin; nội dung FoodLens được viết lại bằng lời riêng, không sao chép nguyên văn.",
+                "supports": [
+                  "characteristics",
+                  "ingredients_summary",
+                  "origin_text",
+                  "short_intro"
+                ],
+                "locator": "Chapter 01 — 1. Phở"
+              },
+              {
+                "source_key": "vnat-must-try-noodles",
+                "title": "Must-try noodles in Vietnam",
+                "publisher": "Viet Nam National Authority of Tourism (vietnam.travel)",
+                "url": "https://vietnam.travel/things-to-do/must-try-noodles-vietnam",
+                "language": "en",
+                "source_kind": "government_tourism",
+                "revision_ref": null,
+                "accessed_on": "2026-10-19",
+                "license_note": "Trang thông tin du lịch chính thức (© Vietnam Tourism). Chỉ dùng để đối chiếu thông tin; nội dung FoodLens được viết lại bằng lời riêng, không sao chép nguyên văn.",
+                "supports": [
+                  "characteristics",
+                  "ingredients_summary",
+                  "short_intro"
+                ],
+                "locator": "Đoạn mở đầu về Phở"
+              },
+              {
+                "source_key": "wiki-vi-pho",
+                "title": "Phở",
+                "publisher": "Wikipedia tiếng Việt (Wikimedia Foundation)",
+                "url": "https://vi.wikipedia.org/w/index.php?title=Ph%E1%BB%9F&oldid=75647145",
+                "language": "vi",
+                "source_kind": "open_license_encyclopedia",
+                "revision_ref": "oldid=75647145 (2026-10-17T15:30:29Z)",
+                "accessed_on": "2026-10-19",
+                "license_note": "Văn bản CC BY-SA 4.0. FoodLens tự diễn đạt lại và ghi nguồn; nếu trích nguyên văn phải ghi công và giữ cùng giấy phép. Bách khoa mở có thể thay đổi nên đã ghim revision; cần đối chiếu thêm khi duyệt.",
+                "supports": [
+                  "ingredients_summary",
+                  "origin_text"
+                ],
+                "locator": "Phần mở đầu; mục Nguồn gốc"
+              }
+            ]
+          },
+          "notice": "Thông tin giới thiệu phổ thông về món ăn; không phải tư vấn sức khỏe, dinh dưỡng hay y tế."
+        }
+      }
+    },
+    {
+      "id": "scan_history_empty",
+      "method": "GET",
+      "path": "/v1/scans",
+      "request": {
+        "authenticated": true,
+        "query": {
+          "limit": 20
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "items": [],
+          "next_cursor": null
+        }
+      }
+    },
+    {
+      "id": "scan_absent",
+      "method": "GET",
+      "path": "/v1/scans/{id}",
+      "request": {
+        "authenticated": true,
+        "path_params": {
+          "id": "40000000-0000-4000-8000-000000000001"
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "error": {
+            "code": "NOT_FOUND",
+            "message": "Scan was not found.",
+            "details": [],
+            "request_id": "50000000-0000-4000-8000-000000000001"
+          }
+        }
+      }
+    },
+    {
+      "id": "confirm_missing_revision",
+      "method": "PATCH",
+      "path": "/v1/scans/{id}/result",
+      "request": {
+        "authenticated": true,
+        "path_params": {
+          "id": "40000000-0000-4000-8000-000000000001"
+        },
+        "body": {
+          "confirmations": []
+        }
+      },
+      "response": {
+        "status": 428,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "error": {
+            "code": "IF_MATCH_REQUIRED",
+            "message": "If-Match is required.",
+            "details": [],
+            "request_id": "50000000-0000-4000-8000-000000000001"
+          }
+        }
+      }
+    },
+    {
+      "id": "confirm_absent_scan",
+      "method": "PATCH",
+      "path": "/v1/scans/{id}/result",
+      "request": {
+        "authenticated": true,
+        "path_params": {
+          "id": "40000000-0000-4000-8000-000000000001"
+        },
+        "headers": {
+          "If-Match": "\"1\""
+        },
+        "body": {
+          "confirmations": []
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "error": {
+            "code": "NOT_FOUND",
+            "message": "Resource was not found.",
+            "details": [],
+            "request_id": "50000000-0000-4000-8000-000000000001"
+          }
+        }
+      }
+    },
+    {
+      "id": "analyze_model_missing",
+      "method": "POST",
+      "path": "/v1/scans/analyze",
+      "request": {
+        "authenticated": true,
+        "multipart": {
+          "file": "photo.jpg",
+          "input_source": "gallery"
+        }
+      },
+      "response": {
+        "status": 503,
+        "headers": {
+          "x-request-id": "50000000-0000-4000-8000-000000000001",
+          "cache-control": "no-store"
+        },
+        "body": {
+          "error": {
+            "code": "MODEL_NOT_READY",
+            "message": "Detector weights and matching class map are not ready.",
+            "details": [],
+            "request_id": "50000000-0000-4000-8000-000000000001"
+          }
+        }
+      }
+    }
+  ]
+}

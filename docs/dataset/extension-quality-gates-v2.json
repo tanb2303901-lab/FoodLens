@@ -1,0 +1,13 @@
+{
+  "version": "foodlens-extension75-local-gates-v1",
+  "recorded_date": "2026-10-16",
+  "scope": "Minimum experimental local activation checks; not full product/mobile/nutrition acceptance",
+  "legacy_validation_max_relative_map50_drop": 0.05,
+  "legacy_validation_max_relative_map50_95_drop": 0.05,
+  "extension_min_per_class_validation_ap50": 0.25,
+  "extension_min_per_class_test_ap50": 0.25,
+  "require_all_eight_correct_real_api_detections_iou50": true,
+  "require_frozen_legacy_weights": true,
+  "test_use": "Evaluate the fixed validation-selected detector once; do not retune/reselect using test results",
+  "limitations": "Small new class holdouts are food-region crops. Passing these minima is not an accuracy promise on full scenes or phone photos. No independent human annotation review."
+}

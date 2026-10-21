@@ -60,3 +60,8 @@ temp/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Exception (owner decision 2026-10-20): ship the trained model bundle used by the backend
+# so teammates can run inference without training. Only this exact bundle is tracked.
+!/ml/models/foodlens-yolo11n-20261016-extension4h-v2/
+!/ml/models/foodlens-yolo11n-20261016-extension4h-v2/*.pt
